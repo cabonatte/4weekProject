@@ -5,15 +5,22 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
+import { PerfilPage } from '../pages/perfil/perfil';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { SocialPage } from '../pages/social/social';
+import { ReceitaSalvaPage } from '../pages/receita-salva/receita-salva';
+
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    PerfilPage,
+    SocialPage,
+    ReceitaSalvaPage
   ],
   imports: [
     BrowserModule,
@@ -23,7 +30,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    PerfilPage,
+    SocialPage,
+    ReceitaSalvaPage
   ],
   providers: [
     StatusBar,
