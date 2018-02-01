@@ -31,7 +31,7 @@ import { Camera, CameraOptions } from '@ionic-native/camera'; //API Camera
     IonicModule.forRoot(MyApp),
     ReceitasPageModule,
     DetalheReceitaPageModule,
-    Camera
+
 
   ],
   bootstrap: [IonicApp],
@@ -46,7 +46,8 @@ import { Camera, CameraOptions } from '@ionic-native/camera'; //API Camera
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    Camera
   ]
 })
 export class AppModule {}
