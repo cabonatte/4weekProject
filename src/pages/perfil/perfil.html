@@ -7,6 +7,9 @@
 <ion-header>
 
   <ion-navbar class="sideBar">
+    <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+    </button>
     <ion-title>Perfil</ion-title>
   </ion-navbar>
 
@@ -14,7 +17,7 @@
 
 <ion-content padding class="sideBar">
   <ion-card>
-    <img (click)="irParaSocial()" src="assets/imgs/camera.png"/>
+    <img (click)="irParaCamera" src="assets/imgs/camera.png"/>
     <ion-card-content>
         <ion-card-title>Compartilhe seus pratos!</ion-card-title>
       <ion-card-title>
@@ -30,7 +33,7 @@
         <!-- <button ion-item *ngFor="let item of items" (click)="itemSelected(item)">
           {{ item }}
         </button>  -->
-        <button ion-item (click)="irReceitaSalva()" class="sideBar" >Receitas Salvas</button>
+        <button ion-item (click)="irReceitaSalva()" class="sideBar" >Lista de Desejos</button>
       </ion-list>
     </ion-card-content>
   </ion-card>

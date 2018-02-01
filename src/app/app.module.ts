@@ -14,6 +14,8 @@ import { DetalheReceitaPageModule } from '../pages/detalhe-receita/detalhe-recei
 import { SocialPage } from '../pages/social/social';
 import { ReceitaSalvaPage } from '../pages/receita-salva/receita-salva';
 
+import { Camera, CameraOptions } from '@ionic-native/camera'; //API Camera
+
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { ReceitaSalvaPage } from '../pages/receita-salva/receita-salva';
     BrowserModule,
     IonicModule.forRoot(MyApp),
     ReceitasPageModule,
-    DetalheReceitaPageModule
+    DetalheReceitaPageModule,
+    Camera
+
   ],
   bootstrap: [IonicApp],
   entryComponents: [
