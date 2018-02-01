@@ -13,9 +13,13 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   selector: 'page-detalhe-receita',
   templateUrl: 'detalhe-receita.html',
 })
+
 export class DetalheReceitaPage {
 
+  receitaNaTela;
+  
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.receitaNaTela = this.navParams.get('produto');
   }
 
   ionViewDidLoad() {

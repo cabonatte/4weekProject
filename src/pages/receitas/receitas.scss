@@ -2,5 +2,20 @@ page-receitas {
   #content {
     margin-top: 40px;
     background-color: rgb(226, 226, 226);
+  
+
+  #cards {
+      border-radius: 5px;
+  }
+  
+  .ion-ios-star:before{
+      color: gold;
+      padding: 0px;
+  }
+  
+  ion-item{
+      margin: 0;
+      padding-top: 5px;
+  }
   }
 }
