@@ -7,6 +7,7 @@ import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { ReceitasPage } from '../pages/receitas/receitas';
 import { DetalheReceitaPage } from '../pages/detalhe-receita/detalhe-receita';
+import { PerfilPage } from '../pages/perfil/perfil';
 
 @Component({
   templateUrl: 'app.html'
@@ -27,6 +28,8 @@ export class MyApp {
       { title: 'List', component: ListPage },
       { title: 'Receitas', component: ReceitasPage },
       { title: 'Detalhe Receita', component: DetalheReceitaPage },
+      { title: 'Menu', component: ListPage },
+      { title: 'Perfil', component: PerfilPage }
     ];
 
   }
