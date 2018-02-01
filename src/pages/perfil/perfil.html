@@ -6,13 +6,13 @@
 -->
 <ion-header>
 
-  <ion-navbar>
+  <ion-navbar class="sideBar">
     <ion-title>Perfil</ion-title>
   </ion-navbar>
 
 </ion-header>
 
-<ion-content padding>
+<ion-content padding class="sideBar">
   <ion-card>
     <img (click)="irParaSocial()" src="assets/imgs/camera.png"/>
     <ion-card-content>
@@ -25,12 +25,12 @@
         <br>
         <ion-list>Plano</ion-list>
       <p>Famila: Serve 4 pessoas.</p>
-      <button ion-button color="light">Editar Perfil</button>
+      <button ion-button color="light" class="sideBar">Editar Perfil</button>
       <ion-list inset>
         <!-- <button ion-item *ngFor="let item of items" (click)="itemSelected(item)">
           {{ item }}
         </button>  -->
-        <button ion-item (click)="irReceitaSalva()">Receitas Salvas</button>
+        <button ion-item (click)="irReceitaSalva()" class="sideBar" >Receitas Salvas</button>
       </ion-list>
     </ion-card-content>
   </ion-card>
