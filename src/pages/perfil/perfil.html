@@ -20,19 +20,24 @@
     <img (click)="irParaCamera" src="assets/imgs/camera.png"/>
     <ion-card-content>
         <ion-card-title>Compartilhe seus pratos!</ion-card-title>
+
       <ion-card-title>
-        Luisa Gonçalves
+        <p *ngIf = "escondeDado" >Nome: {{perfil.nome}}</p>
+        <input *ngIf = "edicaoPerfil" [(ngModel)]="perfil.nome" type="text">
         </ion-card-title>
-        <p>email: luizagoncalves@gmail.com</p>
-        <p>(11) 98877-8877</p>
+        <p *ngIf = "escondeDado">E-mail: {{perfil.email}}</p>
+        <input *ngIf = "edicaoPerfil" [(ngModel)]="perfil.email" type="text">
+
+        <p *ngIf = "escondeDado">Telefone: {{perfil.telefone}}</p>
+        <input *ngIf = "edicaoPerfil" [(ngModel)]="perfil.telefone" type="text">
         <br>
         <ion-list>Plano</ion-list>
-      <p>Famila: Serve 4 pessoas.</p>
-      <button ion-button color="light" class="sideBar">Editar Perfil</button>
+      <p *ngIf = "escondeDado">{{perfil.plano}}</p>
+        <input *ngIf = "edicaoPerfil" [(ngModel)]="perfil.plano" type="text">
+     
+      <button ion-button color="light" class="sideBar" (click)="editarPerfil()">Editar Perfil</button>
+      <button ion-button color="light" class="sideBar" (click)="salvarPerfil()">Salvar</button>
       <ion-list inset>
-        <!-- <button ion-item *ngFor="let item of items" (click)="itemSelected(item)">
-          {{ item }}
-        </button>  -->
         <button ion-item (click)="irReceitaSalva()" class="sideBar" >Lista de Desejos</button>
       </ion-list>
     </ion-card-content>
