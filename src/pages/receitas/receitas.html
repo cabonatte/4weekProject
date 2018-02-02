@@ -19,29 +19,33 @@
 
 
 <ion-content padding id="content">
-  <ion-card *ngFor = "let produto of receitas">
+  <ion-card *ngFor = "let produto of dadosReceitas.receitas" id="cards">
+    <button (click)= "irParaDetalheReceita(produto)">
+    
+     <img src={{produto.img}}>
 
-    <img src={{produto.img}}>
-    <ion-fab right top>
-      <button ion-fab>
-        <ion-icon name="add"></ion-icon>
-      </button>
-    </ion-fab>
-  
+    <!-- <ion-item>
+      <h1>{{produto.produto}}</h1>
+    </ion-item> -->
+
     <ion-item>
-      <ion-icon name="football" item-start large></ion-icon>
-      <h2>{{produto.produto}}</h2>
+      <h1>{{produto.produto}}</h1>
+      <h3>
+      <!-- <ion-icon name="star"  medium *ngFor = "let i of {{produto.rate}}"></ion-icon> -->
+      <ion-icon name="star"  medium></ion-icon>
+      <ion-icon name="star"  medium></ion-icon>
+      <ion-icon name="star"  medium></ion-icon>
+      <ion-icon name="star"  medium></ion-icon>
+      <ion-icon name="star"  medium></ion-icon>
+      {{produto.nRate}}
+      </h3>
+      <h3>
+      <ion-icon name="timer">  {{produto.tempo}}</ion-icon>
+      <ion-icon name="heart-outline" large icon-end></ion-icon>
+      </h3>
     </ion-item>
-  
-    <ion-item>
-      <span item-left>{{produto.tempo}}</span>
-      <span item-left>Dificuldade:{{produto.dificuldade}}</span>
-      <button ion-button icon-left clear item-end>
-        <ion-icon name="navigate"></ion-icon>
-        Add
-      </button>
-    </ion-item>
-  
+    
+    </button>  
   </ion-card>
 
 </ion-content>

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { DadosReceitasProvider } from '../../providers/dados-receitas/dados-receitas';
 
 /**
  * Generated class for the ReceitaSalvaPage page.
@@ -15,11 +16,12 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class ReceitaSalvaPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public dadosReceitas: DadosReceitasProvider) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ReceitaSalvaPage');
   }
 
+  
 }
