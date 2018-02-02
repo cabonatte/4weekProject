@@ -1,3 +1,6 @@
+<link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+
+
 <ion-header>
   <ion-navbar>
     <button ion-button menuToggle>
@@ -7,9 +10,70 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h3>Easy Cooking</h3>
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <div>
+      <img id="homeimage" src="assets/imgs/EASY.png " alt="">
+    </div>  
+    </ion-row>
 
-  <button ion-button color="light" (click)="irParaPerfil()">Perfil</button>
+    <div class="homecontainer">
+        <ion-row>
+          <div class="subtitlehome">Fácil e rápido!</div>
+        </ion-row>
+        <br>
+        <ion-row>
+          <div class="subimagehome">
+            <img src="assets/imgs/groceries.jpeg" alt="">
+          </div>
+        </ion-row>
+        <br><br>
+        <ion-row id="exception1">
+          <div class="subcontenthome">Deixe a parte chatas de cozinhar com a gente!
+            <br>Você aproveita o melhor da experiencia de cozinhar!</div>
+        </ion-row>
+      </div>
+      <br><br><br><br><br>
+    <div class="homecontainer">
+      <ion-row>
+        <div class="subtitlehome">Como funciona?</div>
+      </ion-row>
+      <br>
+      <ion-row>
+        <div class="subimagehome">
+          <img src="assets/imgs/couplecook.jpeg" alt="">
+          <br><br>
+        </div>
+      </ion-row>
+      <ion-row id="exception2">
+        <div class="subcontenthome">Por questões de: <br>
+          praticidade!<br>
+           descobrir novas receitas! <br>
+            fazer aquela comida homemade! <br>
+             nutrição e qualidade!</div>
+      </ion-row>
+    </div>
+    <br><br><br><br><br>
+<div class="homecontainer">
+  <ion-row>
+    <div class="subtitlehome">Saúdavel do melhor jeito possivel!</div>
+  </ion-row>
+  <br>
+  <ion-row>
+    <div class="subimagehome">
+      <img src="assets/imgs/fineingridients.jpeg" alt="">
+    </div>
+  </ion-row>
+  <ion-row id="exception3">
+      <br><br>
+    <div class="subcontenthome">Ingredientes bem selecionados para você só comer do melhor!</div>
+  </ion-row>
+</div>
+</ion-grid>
 
+  <div id="buttonposition">
+    <button ion-button> Comece a cozinhar! </button>
+  </div>
 </ion-content>
+
