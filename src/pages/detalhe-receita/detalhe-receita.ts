@@ -27,6 +27,14 @@ export class DetalheReceitaPage {
 
   }
 
+  fbShare(fbmsg){
+    this.compartilhar.shareViaFacebook(fbmsg.produto, fbmsg.img, null).then( () =>{
+      console.log("Mensagem enviada");
+    }).catch((error)=>{
+      console.log("Cannot open Facebook");
+    });
+  }
+
   ionViewDidLoad() {
     console.log('ionViewDidLoad DetalheReceitaPage');
   }
