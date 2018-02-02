@@ -14,8 +14,9 @@ import { DetalheReceitaPageModule } from '../pages/detalhe-receita/detalhe-recei
 import { SocialPage } from '../pages/social/social';
 import { ReceitaSalvaPage } from '../pages/receita-salva/receita-salva';
 
-import { Camera, CameraOptions } from '@ionic-native/camera'; //API Camera
-
+import { Camera, CameraOptions } from '@ionic-native/camera';
+import { DadosReceitasProvider } from '../providers/dados-receitas/dados-receitas'; //API Camera
+import { SocialSharing } from '@ionic-native/social-sharing';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,9 @@ import { Camera, CameraOptions } from '@ionic-native/camera'; //API Camera
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    Camera
+    Camera,
+    DadosReceitasProvider,
+    SocialSharing
   ]
 })
 export class AppModule {}

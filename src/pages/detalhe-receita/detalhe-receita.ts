@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { DadosReceitasProvider } from '../../providers/dados-receitas/dados-receitas';
+import { SocialSharing } from '@ionic-native/social-sharing';
 
 /**
  * Generated class for the DetalheReceitaPage page.
@@ -16,10 +18,13 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 export class DetalheReceitaPage {
 
-  receitaNaTela;
-  
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.receitaNaTela = this.navParams.get('produto');
+  detalheReceita;
+
+
+  constructor(public navCtrl: NavController, public navParams: NavParams, public dadosReceitas: DadosReceitasProvider, private compartilhar: SocialSharing) {
+    this.detalheReceita = this.navParams.get('produto');
+    
+
   }
 
   ionViewDidLoad() {

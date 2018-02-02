@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { DetalheReceitaPage } from '../detalhe-receita/detalhe-receita';
+import { DadosReceitasProvider } from '../../providers/dados-receitas/dados-receitas';
 
 /**
  * Generated class for the ReceitasPage page.
@@ -16,14 +17,14 @@ import { DetalheReceitaPage } from '../detalhe-receita/detalhe-receita';
 })
 export class ReceitasPage {
   
-  receitas = [
-    {produto: "Pizza", img:"assets/imgs/receitas/pizza.jpeg", tempo:"1h10", nRate:"3200"},
-    {produto: "Mix de folhas com Frango", img:"assets/imgs/receitas/salada.jpg", tempo:"30min", nRate:"2990"},
-    {produto: "Wrap de Frango a 4 Folhas", img:"assets/imgs/receitas/wrap.jpeg", tempo:"50min", nRate:"3000"},
-    {produto: "Ravioli Bolonhesa", img:"assets/imgs/receitas/pasta.jpeg", tempo:"30min", nRate:"3100"},
-    {produto: "Escondidinho", img:"assets/imgs/receitas/escondidinho.jpeg", tempo:"30min", nRate:"2890"},
-  ]
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  // receitas = [
+  //   {produto: "Pizza", img:"assets/imgs/receitas/pizza.jpeg", tempo:"1h10", nRate:"3200"},
+  //   {produto: "Mix de folhas com Frango", img:"assets/imgs/receitas/salada.jpg", tempo:"30min", nRate:"2990"},
+  //   {produto: "Wrap de Frango a 4 Folhas", img:"assets/imgs/receitas/wrap.jpeg", tempo:"50min", nRate:"3000"},
+  //   {produto: "Ravioli Bolonhesa", img:"assets/imgs/receitas/pasta.jpeg", tempo:"30min", nRate:"3100"},
+  //   {produto: "Escondidinho", img:"assets/imgs/receitas/escondidinho.jpeg", tempo:"30min", nRate:"2890"},
+  // ]
+  constructor(public navCtrl: NavController, public navParams: NavParams, public dadosReceitas: DadosReceitasProvider) {
   }
   
   irParaDetalheReceita(item){

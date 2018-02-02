@@ -19,7 +19,7 @@
 
 
 <ion-content padding id="content">
-  <ion-card *ngFor = "let produto of receitas" id="cards">
+  <ion-card *ngFor = "let produto of dadosReceitas.receitas" id="cards">
     <button (click)= "irParaDetalheReceita(produto)">
     <img src={{produto.img}}>
   
@@ -30,6 +30,7 @@
     <ion-item>
       <h1>{{produto.produto}}</h1>
       <h3>
+      <!-- <ion-icon name="star"  medium *ngFor = "let i of {{produto.rate}}"></ion-icon> -->
       <ion-icon name="star"  medium></ion-icon>
       <ion-icon name="star"  medium></ion-icon>
       <ion-icon name="star"  medium></ion-icon>
