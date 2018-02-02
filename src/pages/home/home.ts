@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { PerfilPage } from '../perfil/perfil';
+import { ReceitasPage } from '../receitas/receitas';
 
 
 @Component({
@@ -14,5 +15,8 @@ export class HomePage {
   }
   irParaPerfil(){
     this.navCtrl.push(PerfilPage);
+  }
+  irParaReceita(){
+    this.navCtrl.push(ReceitasPage);
   }
 }
