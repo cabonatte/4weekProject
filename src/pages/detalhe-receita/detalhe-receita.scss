@@ -1,8 +1,9 @@
 page-detalhe-receita {
-  img{
+  .img_receitas{
       margin-top: 50px;
       width: 100%;
   }
+  
 
   .ion-ios-star{
       color: gold;
@@ -22,4 +23,9 @@ page-detalhe-receita {
     color: white;
   }
 
+  .area_comentario{
+    border: solid lightgrey;
+    border-width: thin;
+    block-size: 100px;
+  }
 }

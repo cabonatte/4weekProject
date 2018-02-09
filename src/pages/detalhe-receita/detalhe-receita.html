@@ -19,7 +19,7 @@
 
 
 <ion-content padding>
-  <img src={{detalheReceita.img}}>
+  <img class= "img_receitas" src={{detalheReceita.img}}>
   <h1>{{detalheReceita.produto}}</h1>
   <h5>
       <ion-icon name="star"  medium></ion-icon>
@@ -43,9 +43,38 @@
   </h5>
 
   <p>{{detalheReceita.descri}}</p>
+
   <h1>Ingredientes no Box</h1>
   <img class = "ingredientes" src={{detalheReceita.ingredientes}}>
   <!-- <button ion-button outiline color="danger">Add</button> -->
+  
+  <h1>Comentários</h1>
+  <ion-list>
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="assets/imgs/IMG_7104.JPG">
+      </ion-avatar>
+      <h2>Darwin</h2>
+      <h4>8 Fev 2018</h4>
+      <p>Prato delicioso! Fácil e rápido de Fazer.</p>
+    </ion-item>
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="assets/imgs/IMG_7104.JPG">
+      </ion-avatar>
+      <h2>Darwin Chou</h2>
+      <h4>8 Fev 2018</h4>
+      <p>Prato delicioso! Fácil e rápido de Fazer.</p>
+    </ion-item>
+  </ion-list>
+  <ion-textarea class="area_comentario" type="text" [(ngModel)]="comentario"></ion-textarea>
+  <button ion-button color="danger" (click)="inserir()">Enviar</button>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
   <ion-row>
     <ion-col>
         <ion-fab bottom right >
