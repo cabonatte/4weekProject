@@ -6,7 +6,7 @@ const ObjectID = require('mongodb').ObjectID;
 
 const app = express();
 
-app.use(expressMongoDb('mongodb://localhost/easycook'));
+app.use(expressMongoDb('mongodb://35.227.56.19/easycook'));
 app.use(bodyParser.json());
 app.use(cors());
 
