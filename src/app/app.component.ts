@@ -8,6 +8,7 @@ import { ListPage } from '../pages/list/list';
 import { ReceitasPage } from '../pages/receitas/receitas';
 import { DetalheReceitaPage } from '../pages/detalhe-receita/detalhe-receita';
 import { PerfilPage } from '../pages/perfil/perfil';
+import { LoginPage } from '../pages/login/login';
 
 @Component({
   templateUrl: 'app.html'
@@ -15,7 +16,7 @@ import { PerfilPage } from '../pages/perfil/perfil';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = HomePage;
+  rootPage: any = LoginPage;
 
   pages: Array<{title: string, component: any}>;
 
@@ -26,7 +27,8 @@ export class MyApp {
     this.pages = [
       { title: 'Home', component: HomePage },
       { title: 'Receitas', component: ReceitasPage },
-      { title: 'Perfil', component: PerfilPage }
+      { title: 'Perfil', component: PerfilPage },
+      { title: 'Login', component: LoginPage }
     ];
 
   }

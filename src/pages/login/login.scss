@@ -1,0 +1,27 @@
+page-login {
+    
+    ion-content {
+        background-image: linear-gradient(to bottom, #ff0000, #d20009, #a6000c, #7b0009, #530000);
+    }
+    ion-content .button-outline-md {
+        color: white;
+        border-color: white;
+        border-radius: 0.7em;
+        border-width: 0.11em;
+    }
+    ion-content .button-md{
+        background-color:white;
+        color: red;
+    }
+    .logotipo img{
+        display:block;
+        margin: 2em;
+        align-items: center;
+
+        
+    }
+
+    .mtop {
+        margin-top: 10%;
+    }
+}

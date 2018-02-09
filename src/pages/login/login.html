@@ -1,0 +1,26 @@
+
+<ion-content padding>
+  <div class="conteudoLogin">
+  <div class="logotipo" *ngIf="mostrarImg">
+    <img src="assets/imgs/EASY.png">
+  </div>
+  <div class="camposLogin" [ngClass]="{'mtop': !mostrarImg}">
+      <ion-list>
+          <ion-item>
+            <ion-label floating>Username</ion-label>
+            <ion-input [(ngModel)]="dados.login" (focus)="focusForm()" (blur)="unFocusForm()" type="text"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label floating>Password</ion-label>
+            <ion-input [(ngModel)]="dados.senha" (focus)="focusForm()" (click)="abrirTela()" (blur)="unFocusForm()" type="password"></ion-input>
+          </ion-item>
+        </ion-list>
+        <br>
+        <br>
+  </div>
+  <div class="botoesLogin">
+    <button ion-button block>Log In</button>
+    <button ion-button block>Cadastro</button>
+  </div>
+</div>
+</ion-content>
