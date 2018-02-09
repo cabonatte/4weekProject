@@ -13,6 +13,7 @@ import { ReceitasPageModule } from '../pages/receitas/receitas.module';
 import { DetalheReceitaPageModule } from '../pages/detalhe-receita/detalhe-receita.module';
 import { SocialPage } from '../pages/social/social';
 import { ReceitaSalvaPage } from '../pages/receita-salva/receita-salva';
+import { LoginPage } from '../pages/login/login';
 
 import { Camera, CameraOptions } from '@ionic-native/camera';
 import { DadosReceitasProvider } from '../providers/dados-receitas/dados-receitas'; //API Camera
@@ -25,15 +26,14 @@ import { SocialSharing } from '@ionic-native/social-sharing';
     ListPage,
     PerfilPage,
     SocialPage,
-    ReceitaSalvaPage
+    ReceitaSalvaPage,
+    LoginPage
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
     ReceitasPageModule,
-    DetalheReceitaPageModule,
-
-
+    DetalheReceitaPageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -42,7 +42,8 @@ import { SocialSharing } from '@ionic-native/social-sharing';
     ListPage,
     PerfilPage,
     SocialPage,
-    ReceitaSalvaPage
+    ReceitaSalvaPage,
+    LoginPage
   ],
   providers: [
     StatusBar,
